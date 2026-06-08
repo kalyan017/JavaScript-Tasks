@@ -1,5 +1,6 @@
 // Task-1:
 
+
 // let basicsalary=25000;
 // let HRA=basicsalary*20/100;
 // let bonus=basicsalary*10/100;
@@ -15,6 +16,7 @@
 
 
 // Task-2:
+
 
 // let marks=10;
 
