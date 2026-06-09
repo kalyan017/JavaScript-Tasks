@@ -323,7 +323,6 @@
 
 // // Task-19:
 
-
 // let timer = 10;
 
 // while (timer > 0) {
@@ -331,6 +330,7 @@
 //     timer--
 // }
 // console.log("Happy New Year");
+
 
 
 // Task - 20:
