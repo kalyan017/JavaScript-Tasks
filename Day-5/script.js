@@ -80,6 +80,9 @@
 // }
 
 
+
+
+
 // Task - 2:
 
 // let employee = [
@@ -155,6 +158,9 @@
 //     }
 // }
 // )
+
+
+
 
 
 // Task - 3:
@@ -263,6 +269,8 @@
 //         }
 //     }
 // )
+
+
 
 
 // // Task-4:
@@ -384,6 +392,8 @@
 
 
 
+
+
 // Task-5:
 
 // let patients = [
@@ -485,6 +495,9 @@
 // )
 
 
+
+
+
 // task-6:
 // let books = [
 //     {
@@ -584,6 +597,7 @@
 
 
 
+
 // Task-7:
 
 // let products = [
@@ -655,6 +669,7 @@
 //         }
 //     }
 // )
+
 
 
 
@@ -759,3 +774,95 @@
 
 
 
+
+// Task-9:
+
+// let passengers = [
+//     {
+//         passengerId: 1,
+//         name: "Kalyan",
+//         seatNumber: "A1",
+//         ticketPrice: 1200,
+//         busType: "AC Sleeper"
+//     },
+//     {
+//         passengerId: 2,
+//         name: "Arjun",
+//         seatNumber: "A2",
+//         ticketPrice: 1200,
+//         busType: "AC Sleeper"
+//     },
+//     {
+//         passengerId: 3,
+//         name: "Harsha",
+//         seatNumber: "B1",
+//         ticketPrice: 900,
+//         busType: "AC Seater"
+//     },
+//     {
+//         passengerId: 4,
+//         name: "Bittu",
+//         seatNumber: "B2",
+//         ticketPrice: 900,
+//         busType: "AC Seater"
+//     },
+//     {
+//         passengerId: 5,
+//         name: "Dattu",
+//         seatNumber: "",
+//         ticketPrice: 700,
+//         busType: "Non-AC"
+//     }
+// ];
+
+// console.log("passenger names:");
+// for(let i=0;i<passengers.length;i++){
+//     console.log(passengers[i].name);
+// }
+
+// let totalcollection=0;
+// for(let i=0;i<passengers.length;i++){
+//     totalcollection+=passengers[i].ticketPrice;
+// }
+// console.log("Total  Collection:",totalcollection);
+
+// console.log("Occupied Seats:");
+// for(let i=0;i<passengers.length;i++){
+//     console.log(passengers[i].seatNumber);
+// }
+
+// for(let bus of passengers){
+//     console.log(bus.passengerId,bus.name);
+//     switch (bus.busType) {
+//         case "AC Sleeper":
+//             console.log("AC SLEEPER Bus");
+//             break;
+//         case "AC Seater":
+//             console.log("AC SEATER Bus");
+//             break;
+//         case "Non-AC":
+//             console.log("NON AC Bus");
+//             break;
+//         default:
+//             console.log("BUS NOT FOUND");
+//             break;
+//     }
+// }
+
+// console.log("Ticket Confirmation:");
+
+// let confirmticket=(ticket)=>{
+//     ticket()
+// }
+// confirmticket(
+//     ()=>{
+//         for(let passenger of passengers){
+//             if(passenger.seatNumber){
+//                 console.log(passenger.name,": Your ticket is confirmed");
+//             }else{
+//                 console.log(passenger.name,": please take a ticket to confirm your seat");
+                
+//             }
+//         }
+//     }
+// )
