@@ -861,8 +861,110 @@
 //                 console.log(passenger.name,": Your ticket is confirmed");
 //             }else{
 //                 console.log(passenger.name,": please take a ticket to confirm your seat");
-                
+
 //             }
 //         }
 //     }
 // )
+
+
+
+
+// task-10:
+
+let mobiles = [
+    {
+        brand: "Samsung",
+        model: "Galaxy S24",
+        category: "Flagship",
+        price: 79999,
+        stock: 15
+    },
+    {
+        brand: "Apple",
+        model: "iPhone 16",
+        category: "Flagship",
+        price: 89999,
+        stock: 10
+    },
+    {
+        brand: "OnePlus",
+        model: "OnePlus 13",
+        category: "Premium",
+        price: 69999,
+        stock: 20
+    },
+    {
+        brand: "Xiaomi",
+        model: "Redmi Note 14 Pro",
+        category: "Mid-Range",
+        price: 24999,
+        stock: 25
+    },
+    {
+        brand: "Realme",
+        model: "Realme GT 7",
+        category: "Budget",
+        price: 34999,
+        stock: 18
+    }
+];
+
+console.log("Mobile Names:");
+for (let names of mobiles) {
+    console.log(names.brand);
+}
+
+let totalstockvalue = 0;
+for (let value of mobiles) {
+    totalstockvalue += value.price;
+}
+console.log("Total Stock Value:", totalstockvalue);
+
+console.log("Mobiles above Rs.20000:");
+for (let mobile of mobiles) {
+    if (mobile.price > 20000) {
+        console.log(mobile.brand);
+    }
+}
+
+for (let mobile of mobiles) {
+    switch (mobile.category) {
+        case "Flagship":
+            console.log(mobile.model + " is a Flagship Mobile");
+            break;
+
+        case "Premium":
+            console.log(mobile.model + " is a Premium Mobile");
+            break;
+
+        case "Mid-Range":
+            console.log(mobile.model + " is a Mid-Range Mobile");
+            break;
+
+        case "Budget":
+            console.log(mobile.model + " is a Budget Mobile");
+            break;
+
+        default:
+            console.log("Unknown Category");
+    }
+}
+
+console.log("Sales Report:");
+
+let salesreport = (Report) => {
+    Report()
+}
+salesreport(
+    () => {
+        for (let mobile of mobiles) {
+            console.log("Mobile Brand:", mobile.brand);
+            console.log("Mobile Category:", mobile.category);
+            console.log("Mobile Model:", mobile.model);
+            console.log("Mobile Price", mobile.price);
+            console.log("Mobile Stock:", mobile.stock);
+        }
+    }
+)
+
