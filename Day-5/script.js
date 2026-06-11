@@ -1,8 +1,5 @@
 // Task-1:
 
-
-
-
 // let students = [
 //     {
 //         id: 1,
