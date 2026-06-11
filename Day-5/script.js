@@ -660,102 +660,102 @@
 
 // Task-8:
 
-let applicants = [
-    {
-        name: "Kalyan",
-        age: 21,
-        percentage: 85,
-        department: "CSE"
-    },
-    {
-        name: "Arjun",
-        age: 22,
-        percentage: 48,
-        department: "ECE"
-    },
-    {
-        name: "Harsha",
-        age: 20,
-        percentage: 92,
-        department: "EEE"
-    },
-    {
-        name: "Bittu",
-        age: 23,
-        percentage: 67,
-        department: "MECH"
-    },
-    {
-        name: "Dattu",
-        age: 21,
-        percentage: 58,
-        department: "CIVIL"
-    }
-];
+// let applicants = [
+//     {
+//         name: "Kalyan",
+//         age: 21,
+//         percentage: 85,
+//         department: "CSE"
+//     },
+//     {
+//         name: "Arjun",
+//         age: 22,
+//         percentage: 48,
+//         department: "ECE"
+//     },
+//     {
+//         name: "Harsha",
+//         age: 20,
+//         percentage: 92,
+//         department: "EEE"
+//     },
+//     {
+//         name: "Bittu",
+//         age: 23,
+//         percentage: 67,
+//         department: "MECH"
+//     },
+//     {
+//         name: "Dattu",
+//         age: 21,
+//         percentage: 58,
+//         department: "CIVIL"
+//     }
+// ];
 
-console.log("Applicant names:");
-for (let student of applicants) {
-    console.log(student.name);
-}
+// console.log("Applicant names:");
+// for (let student of applicants) {
+//     console.log(student.name);
+// }
 
-console.log("Eligibility Check:");
-for (let student of applicants) {
-    if (student.age >= 18) {
-        if (student.percentage >= 60) {
-            console.log(student.name, "is", "Eligible");
-        } else {
-            console.log(student.name, "is", "Not eligible");
-        }
-    } else {
-        console.log("Not Eligible");
+// console.log("Eligibility Check:");
+// for (let student of applicants) {
+//     if (student.age >= 18) {
+//         if (student.percentage >= 60) {
+//             console.log(student.name, "is", "Eligible");
+//         } else {
+//             console.log(student.name, "is", "Not eligible");
+//         }
+//     } else {
+//         console.log("Not Eligible");
 
-    }
-}
+//     }
+// }
 
-for (let dept of applicants) {
-    console.log(dept.name);
-    switch (dept.department) {
-        case "CSE":
-            console.log("CSE Department");
-            break;
-        case "ECE":
-            console.log("ECE Department");
-            break;
-        case "EEE":
-            console.log("EEE Department");
-            break;
-        case "CIVIL":
-            console.log("CIVIL Department");
-            break;
-        case "MECH":
-            console.log("MECH Department");
-            break;
-        default:
-            console.log("Department not found");
-            break;
-    }
-}
+// for (let dept of applicants) {
+//     console.log(dept.name);
+//     switch (dept.department) {
+//         case "CSE":
+//             console.log("CSE Department");
+//             break;
+//         case "ECE":
+//             console.log("ECE Department");
+//             break;
+//         case "EEE":
+//             console.log("EEE Department");
+//             break;
+//         case "CIVIL":
+//             console.log("CIVIL Department");
+//             break;
+//         case "MECH":
+//             console.log("MECH Department");
+//             break;
+//         default:
+//             console.log("Department not found");
+//             break;
+//     }
+// }
 
-console.log("Admission Results:");
-let Results = (Admission) => {
-    Admission()
-}
-Results(
-    () => {
-        for (let student of applicants) {
-            if (student.age >= 18) {
-                if (student.percentage >= 60) {
-                    console.log(student.name, ": your admission is succes");
+// console.log("Admission Results:");
+// let Results = (Admission) => {
+//     Admission()
+// }
+// Results(
+//     () => {
+//         for (let student of applicants) {
+//             if (student.age >= 18) {
+//                 if (student.percentage >= 60) {
+//                     console.log(student.name, ": your admission is succes");
 
-                } else {
-                    console.log(student.name, ": your admission is not success bcoz of low percentage");
-                }
-            } else {
-                console.log(student.name, ": your admission is not success bcoz of age");
-            }
-        }
-    }
-)
+//                 } else {
+//                     console.log(student.name, ": your admission is not success bcoz of low percentage");
+//                 }
+//             } else {
+//                 console.log(student.name, ": your admission is not success bcoz of age");
+//             }
+//         }
+//     }
+// )
 
 
 
