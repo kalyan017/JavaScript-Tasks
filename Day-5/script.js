@@ -1,4 +1,6 @@
-// // Task-1:
+// Task-1:
+
+
 
 
 // let students = [
@@ -34,10 +36,14 @@
 //     }
 // ]
 
+
+
 // console.log("Student names: ")
 // for (let student of students) {
 //     console.log(student.name);
 // }
+
+
 
 // let totalmarks = 0;
 // for (let student of students) {
@@ -46,12 +52,15 @@
 // console.log("Total Marks :", totalmarks);
 
 
+
 // console.log("Students who scored above 80:");
 // for (let student of students) {
 //     if (student.marks > 80) {
 //         console.log(student.name);
 //     }
 // }
+
+
 
 // console.log("Student Grades:");
 // for (let student of students) {
@@ -65,6 +74,8 @@
 //         console.log(student.name, ": Fail");
 //     }
 // }
+
+
 
 
 // console.log("Student Details: ");
@@ -105,16 +116,19 @@
 //     }
 // ]
 
+
 // console.log("Employee Names:");
 // for (let i = 0; i < employee.length; i++) {
 //     console.log(employee[i].name);
 // }
+
 
 // let totalexpense = 0;
 // for (let i = 0; i < employee.length; i++) {
 //     totalexpense += employee[i].salary;
 // }
 // console.log("Total company salary expense:", totalexpense);
+
 
 // console.log("Employees earning above 30000: ");
 
@@ -123,6 +137,7 @@
 //         console.log(employee[i]);
 //     }
 // }
+
 
 // console.log("Department descriptions:");
 // for (i = 0; i < employee.length; i++) {
@@ -152,18 +167,16 @@
 // }
 // reports(() => {
 //     for (let i = 0; i < employee.length; i++) {
-//         console.log(employee[i].name,
-//             employee[i].salary,
-//             employee[i].department);
+//         console.log("Employee Name:",employee[i].name);
+//         console.log("Employee Salary:",employee[i].salary);
+//         console.log("Employee Department:",employee[i].department);
 //     }
 // }
 // )
 
 
 
-
-
-// Task - 3:
+//Task - 3:
 
 // let foodItems = [
 //     {
@@ -203,6 +216,7 @@
 //     console.log(food.foodName);
 // }
 
+
 // let totalvalue = 0;
 // for (let total of foodItems) {
 //     totalvalue += total.price;
@@ -238,6 +252,7 @@
 //     }
 // }
 
+
 // console.log("Order Confirmation:");
 
 // let orderconfirmation = (order) => {
@@ -272,8 +287,7 @@
 
 
 
-
-// // Task-4:
+//Task-4:
 
 // let movies = [
 //     {
@@ -394,7 +408,7 @@
 
 
 
-// Task-5:
+//Task-5:
 
 // let patients = [
 //     {
@@ -429,7 +443,9 @@
 //     }
 // ];
 
+
 // console.log("Patient Names:");
+
 
 // for (let names of patients) {
 //     console.log(names.patientName);
@@ -442,6 +458,7 @@
 //         console.log(patientage);
 //     }
 // }
+
 
 // for (let patientdisease of patients) {
 //     console.log(patientdisease.patientName);
@@ -467,6 +484,8 @@
 //     }
 // }
 
+
+
 // let appointmentconfirmation = (booking) => {
 //     booking()
 // }
@@ -478,27 +497,26 @@
 //         console.log("Migraine Department");
 //         console.log("Asthma Department");
 //         console.log("Hypertension Department");
-//         let diseasefound=false;
-//         let select=prompt("enter disease name:")
-//         for(let diseases of patients){
-//             if(diseases.disease===select){
-//                 diseasefound=true;
+//         let diseasefound = false;
+//         let select = prompt("enter disease name:")
+//         for (let diseases of patients) {
+//             if (diseases.disease === select) {
+//                 diseasefound = true;
 //                 console.log("Appointment Confirmed!");
 //                 break;
 //             }
 //         }
-//         if(!diseasefound){
+//         if (!diseasefound) {
 //             console.log("No Doctors Available for this disease");
-
 //         }
 //     }
 // )
 
 
 
+//task-6:
 
 
-// task-6:
 // let books = [
 //     {
 //         bookId: 1,
@@ -537,25 +555,29 @@
 //     }
 // ];
 
+
 // console.log("Book Names:");
-// for(let i=0;i<books.length;i++){
+// for (let i = 0; i < books.length; i++) {
 //     console.log(books[i].bookName);
 // }
 
-// let totalvalue=0;
-// for(let value of books){
-//     totalvalue+=value.price;
+
+// let totalvalue = 0;
+// for (let value of books) {
+//     totalvalue += value.price;
 // }
-// console.log("Total Books Value: ",totalvalue);
+// console.log("Total Books Value: ", totalvalue);
+
 
 // console.log("Book value more than 500: ");
-// for(let value of books){
-//     if(value.price>500){
+// for (let value of books) {
+//     if (value.price > 500) {
 //         console.log(value.bookName);
 //     }
 // }
 
-// for(let categories of books){
+
+// for (let categories of books) {
 //     console.log(categories.bookName);
 //     switch (categories.category) {
 //         case "Self Help":
@@ -579,26 +601,27 @@
 //     }
 // }
 
-// let selection=()=>{
-//       let select=prompt("please select a book: ");
-//       let bookselect=false;
-//       for(let book of books){
-//         if(book.bookName===select){
-//             bookselect=true;
+
+// let selection = () => {
+//     let select = prompt("please select a book: ");
+//     let bookselect = false;
+//     for (let book of books) {
+//         if (book.bookName === select) {
+//             bookselect = true;
 //             console.log("Book is issued");
 //             return;
 //         }
-//       }
-//       if(!bookselect){
+//     }
+//     if (!bookselect) {
 //         console.log("Book not found");
-//       }
+//     }
 // }
 // selection()
 
 
 
 
-// Task-7:
+// Task - 7:
 
 // let products = [
 //     {
@@ -633,39 +656,49 @@
 //     }
 // ];
 
+
 // console.log("Products: ");
-// for(let items of products){
+// for (let items of products) {
 //     console.log(items.productName);
 // }
 
-// let total=0;
-// for(let value of products){
-//     total+=value.price;
+
+// let total = 0;
+// for (let value of products) {
+//     total += value.price*value.stock;
 // }
-// console.log("Inventory Value:",total);
+// console.log("Inventory Value:", total);
+
 
 // console.log("Stock itmes less than 10:");
-// for(let items of products){
-//     if(items.stock<10){
-//         console.log(items.productName);
+// for (let items of products) {
+//     if (items.stock < 10) {
+//         console.log(items.productName, ": Low Stock");
+//     } else {
+//         console.log(items.productName, ": In Stock");
 //     }
 // }
 
+
 // console.log("stock status:");
-// for(let items of products){
-//     console.log(items.productName,":",items.stock);
+// for (let items of products) {
+//     console.log(items.productName, ":", items.stock);
 // }
+
 
 // console.log("Product Report:");
 
-// let reports=(product)=>{
-//    product()
+// let reports = (product) => {
+//     product()
 // }
 
 // reports(
-//     ()=>{
-//         for(let items of products){
-//             console.log(items.productId,items.productName,items.stock,items.price);
+//     () => {
+//         for (let items of products) {
+//             console.log("Porduct ID:",items.productId); 
+//             console.log("Product Name:",items.productName);
+//             console.log("Product Stock:",items.stock);
+//             console.log("product Price:",items.price);
 //         }
 //     }
 // )
@@ -673,7 +706,7 @@
 
 
 
-// Task-8:
+//Task-8:
 
 // let applicants = [
 //     {
@@ -774,7 +807,6 @@
 
 
 
-
 // Task-9:
 
 // let passengers = [
@@ -828,7 +860,10 @@
 
 // console.log("Occupied Seats:");
 // for(let i=0;i<passengers.length;i++){
-//     console.log(passengers[i].seatNumber);
+//     if(passengers[i].seatNumber){
+//         console.log(passengers[i].seatNumber);
+//     }
+    
 // }
 
 // for(let bus of passengers){
@@ -869,102 +904,100 @@
 
 
 
-
 // task-10:
 
-let mobiles = [
-    {
-        brand: "Samsung",
-        model: "Galaxy S24",
-        category: "Flagship",
-        price: 79999,
-        stock: 15
-    },
-    {
-        brand: "Apple",
-        model: "iPhone 16",
-        category: "Flagship",
-        price: 89999,
-        stock: 10
-    },
-    {
-        brand: "OnePlus",
-        model: "OnePlus 13",
-        category: "Premium",
-        price: 69999,
-        stock: 20
-    },
-    {
-        brand: "Xiaomi",
-        model: "Redmi Note 14 Pro",
-        category: "Mid-Range",
-        price: 24999,
-        stock: 25
-    },
-    {
-        brand: "Realme",
-        model: "Realme GT 7",
-        category: "Budget",
-        price: 34999,
-        stock: 18
-    }
-];
+// let mobiles = [
+//     {
+//         brand: "Samsung",
+//         model: "Galaxy S24",
+//         category: "Flagship",
+//         price: 79999,
+//         stock: 15
+//     },
+//     {
+//         brand: "Apple",
+//         model: "iPhone 16",
+//         category: "Flagship",
+//         price: 89999,
+//         stock: 10
+//     },
+//     {
+//         brand: "OnePlus",
+//         model: "OnePlus 13",
+//         category: "Premium",
+//         price: 69999,
+//         stock: 20
+//     },
+//     {
+//         brand: "Xiaomi",
+//         model: "Redmi Note 14 Pro",
+//         category: "Mid-Range",
+//         price: 24999,
+//         stock: 25
+//     },
+//     {
+//         brand: "Realme",
+//         model: "Realme GT 7",
+//         category: "Budget",
+//         price: 34999,
+//         stock: 18
+//     }
+// ];
 
-console.log("Mobile Names:");
-for (let names of mobiles) {
-    console.log(names.brand);
-}
+// console.log("Mobile Names:");
+// for (let names of mobiles) {
+//     console.log(names.brand);
+// }
 
-let totalstockvalue = 0;
-for (let value of mobiles) {
-    totalstockvalue += value.price;
-}
-console.log("Total Stock Value:", totalstockvalue);
+// let totalstockvalue = 0;
+// for (let value of mobiles) {
+//     totalstockvalue += value.price*value.stock;
+// }
+// console.log("Total Stock Value:", totalstockvalue);
 
-console.log("Mobiles above Rs.20000:");
-for (let mobile of mobiles) {
-    if (mobile.price > 20000) {
-        console.log(mobile.brand);
-    }
-}
+// console.log("Mobiles above Rs.20000:");
+// for (let mobile of mobiles) {
+//     if (mobile.price > 20000) {
+//         console.log(mobile.brand);
+//     }
+// }
 
-for (let mobile of mobiles) {
-    switch (mobile.category) {
-        case "Flagship":
-            console.log(mobile.model + " is a Flagship Mobile");
-            break;
+// for (let mobile of mobiles) {
+//     switch (mobile.category) {
+//         case "Flagship":
+//             console.log(mobile.model + " is a Flagship Mobile");
+//             break;
 
-        case "Premium":
-            console.log(mobile.model + " is a Premium Mobile");
-            break;
+//         case "Premium":
+//             console.log(mobile.model + " is a Premium Mobile");
+//             break;
 
-        case "Mid-Range":
-            console.log(mobile.model + " is a Mid-Range Mobile");
-            break;
+//         case "Mid-Range":
+//             console.log(mobile.model + " is a Mid-Range Mobile");
+//             break;
 
-        case "Budget":
-            console.log(mobile.model + " is a Budget Mobile");
-            break;
+//         case "Budget":
+//             console.log(mobile.model + " is a Budget Mobile");
+//             break;
 
-        default:
-            console.log("Unknown Category");
-    }
-}
+//         default:
+//             console.log("Unknown Category");
+//     }
+// }
 
-console.log("Sales Report:");
+// console.log("Sales Report:");
 
-let salesreport = (Report) => {
-    Report()
-}
-salesreport(
-    () => {
-        for (let mobile of mobiles) {
-            console.log("Mobile Brand:", mobile.brand);
-            console.log("Mobile Category:", mobile.category);
-            console.log("Mobile Model:", mobile.model);
-            console.log("Mobile Price", mobile.price);
-            console.log("Mobile Stock:", mobile.stock);
-        }
-    }
-)
-
+// let salesreport = (Report) => {
+//     Report()
+// }
+// salesreport(
+//     () => {
+//         for (let mobile of mobiles) {
+//             console.log("Mobile Brand:", mobile.brand);
+//             console.log("Mobile Category:", mobile.category);
+//             console.log("Mobile Model:", mobile.model);
+//             console.log("Mobile Price", mobile.price);
+//             console.log("Mobile Stock:", mobile.stock);
+//         }
+//     }
+// )
