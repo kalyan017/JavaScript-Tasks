@@ -248,7 +248,7 @@
 //         let itemfound = false;
 //         let item = prompt("enter an item to order:");
 //         for (let i = 0; i < foodItems.length; i++) {
-//             if (foodItems[i].foodName == item) {
+//             if (foodItems[i].foodName === item) {
 //                 itemfound = true;
 //                 console.log("Order Confirmed!");
 //                 console.log("Name:", foodItems[i].foodName);
@@ -359,18 +359,19 @@
 //         let select = prompt("enter a movie name");
 //         let moviefound = false;
 //         for (let movie of movies) {
-//             if (movie.movieName == select) {
+//             if (movie.movieName === select) {
 //                 moviefound = true;
 //                 if (movie.availableSeats > 0) {
 //                     console.log("Booking confirmed!");
 //                     console.log(movie.movieName);
 //                     console.log(movie.ticketPrice);
 //                     console.log(movie.language);
-//                     break;
+//                     return;
 //                 } else {
+//                     console.log("Booking is not confirmed!");
 //                     console.log(movie.movieName);
 //                     console.log("House full");
-//                     break;
+//                     return;
 //                 }
 //             }
 
@@ -380,3 +381,381 @@
 //         }
 //     }
 // )
+
+
+
+// Task-5:
+
+// let patients = [
+//     {
+//         patientId: 1,
+//         patientName: "Ramesh",
+//         age: 65,
+//         disease: "Fever"
+//     },
+//     {
+//         patientId: 2,
+//         patientName: "Suresh",
+//         age: 60,
+//         disease: "Diabetes"
+//     },
+//     {
+//         patientId: 3,
+//         patientName: "Priya",
+//         age: 28,
+//         disease: "Migraine"
+//     },
+//     {
+//         patientId: 4,
+//         patientName: "Kiran",
+//         age: 75,
+//         disease: "Asthma"
+//     },
+//     {
+//         patientId: 5,
+//         patientName: "Anjali",
+//         age: 50,
+//         disease: "Hypertension"
+//     }
+// ];
+
+// console.log("Patient Names:");
+
+// for (let names of patients) {
+//     console.log(names.patientName);
+// }
+
+// console.log("Total patients:", patients.length);
+// console.log("Patients above 60:");
+// for (let patientage of patients) {
+//     if (patientage.age > 60) {
+//         console.log(patientage);
+//     }
+// }
+
+// for (let patientdisease of patients) {
+//     console.log(patientdisease.patientName);
+//     switch (patientdisease.disease) {
+//         case "Fever":
+//             console.log("Fever Department");
+//             break;
+//         case "Diabetes":
+//             console.log("Diabetes Department");
+//             break;
+//         case "Migraine":
+//             console.log("Migraine Department");
+//             break;
+//         case "Asthma":
+//             console.log("Asthma Department");
+//             break;
+//         case "Hypertension":
+//             console.log("Hypertension Department");
+//             break;
+//         default:
+//             console.log("Department not found");
+//             break;
+//     }
+// }
+
+// let appointmentconfirmation = (booking) => {
+//     booking()
+// }
+// appointmentconfirmation(
+//     () => {
+//         console.log("Available Departments:");
+//         console.log("Fever Department");
+//         console.log("Diabetes Department");
+//         console.log("Migraine Department");
+//         console.log("Asthma Department");
+//         console.log("Hypertension Department");
+//         let diseasefound=false;
+//         let select=prompt("enter disease name:")
+//         for(let diseases of patients){
+//             if(diseases.disease===select){
+//                 diseasefound=true;
+//                 console.log("Appointment Confirmed!");
+//                 break;
+//             }
+//         }
+//         if(!diseasefound){
+//             console.log("No Doctors Available for this disease");
+
+//         }
+//     }
+// )
+
+
+// task-6:
+// let books = [
+//     {
+//         bookId: 1,
+//         bookName: "Atomic Habits",
+//         author: "James Clear",
+//         category: "Self Help",
+//         price: 499
+//     },
+//     {
+//         bookId: 2,
+//         bookName: "The Alchemist",
+//         author: "Paulo Coelho",
+//         category: "Fiction",
+//         price: 350
+//     },
+//     {
+//         bookId: 3,
+//         bookName: "Rich Dad Poor Dad",
+//         author: "Robert Kiyosaki",
+//         category: "Finance",
+//         price: 550
+//     },
+//     {
+//         bookId: 4,
+//         bookName: "Think and Grow Rich",
+//         author: "Napoleon Hill",
+//         category: "Motivational",
+//         price: 400
+//     },
+//     {
+//         bookId: 5,
+//         bookName: "Clean Code",
+//         author: "Robert C. Martin",
+//         category: "Programming",
+//         price: 650
+//     }
+// ];
+
+// console.log("Book Names:");
+// for(let i=0;i<books.length;i++){
+//     console.log(books[i].bookName);
+// }
+
+// let totalvalue=0;
+// for(let value of books){
+//     totalvalue+=value.price;
+// }
+// console.log("Total Books Value: ",totalvalue);
+
+// console.log("Book value more than 500: ");
+// for(let value of books){
+//     if(value.price>500){
+//         console.log(value.bookName);
+//     }
+// }
+
+// for(let categories of books){
+//     console.log(categories.bookName);
+//     switch (categories.category) {
+//         case "Self Help":
+//             console.log("Self Help category");
+//             break;
+//         case "Fiction":
+//             console.log("Fiction category");
+//             break;
+//         case "Programming":
+//             console.log("Programming Category");
+//             break;
+//         case "Motivational":
+//             console.log("Motivational Category");
+//             break;
+//         case "Finance":
+//             console.log("Finance Category");
+//             break;
+//         default:
+//             console.log("Category not found");
+//             break;
+//     }
+// }
+
+// let selection=()=>{
+//       let select=prompt("please select a book: ");
+//       let bookselect=false;
+//       for(let book of books){
+//         if(book.bookName===select){
+//             bookselect=true;
+//             console.log("Book is issued");
+//             return;
+//         }
+//       }
+//       if(!bookselect){
+//         console.log("Book not found");
+//       }
+// }
+// selection()
+
+
+
+// Task-7:
+
+// let products = [
+//     {
+//         productId: 1,
+//         productName: "Laptop",
+//         price: 55000,
+//         stock: 10
+//     },
+//     {
+//         productId: 2,
+//         productName: "Mobile",
+//         price: 25000,
+//         stock: 5
+//     },
+//     {
+//         productId: 3,
+//         productName: "Headphones",
+//         price: 2000,
+//         stock: 3
+//     },
+//     {
+//         productId: 4,
+//         productName: "Keyboard",
+//         price: 1500,
+//         stock: 20
+//     },
+//     {
+//         productId: 5,
+//         productName: "Mouse",
+//         price: 800,
+//         stock: 25
+//     }
+// ];
+
+// console.log("Products: ");
+// for(let items of products){
+//     console.log(items.productName);
+// }
+
+// let total=0;
+// for(let value of products){
+//     total+=value.price;
+// }
+// console.log("Inventory Value:",total);
+
+// console.log("Stock itmes less than 10:");
+// for(let items of products){
+//     if(items.stock<10){
+//         console.log(items.productName);
+//     }
+// }
+
+// console.log("stock status:");
+// for(let items of products){
+//     console.log(items.productName,":",items.stock);
+// }
+
+// console.log("Product Report:");
+
+// let reports=(product)=>{
+//    product()
+// }
+
+// reports(
+//     ()=>{
+//         for(let items of products){
+//             console.log(items.productId,items.productName,items.stock,items.price);
+//         }
+//     }
+// )
+
+
+
+// Task-8:
+
+let applicants = [
+    {
+        name: "Kalyan",
+        age: 21,
+        percentage: 85,
+        department: "CSE"
+    },
+    {
+        name: "Arjun",
+        age: 22,
+        percentage: 48,
+        department: "ECE"
+    },
+    {
+        name: "Harsha",
+        age: 20,
+        percentage: 92,
+        department: "EEE"
+    },
+    {
+        name: "Bittu",
+        age: 23,
+        percentage: 67,
+        department: "MECH"
+    },
+    {
+        name: "Dattu",
+        age: 21,
+        percentage: 58,
+        department: "CIVIL"
+    }
+];
+
+console.log("Applicant names:");
+for (let student of applicants) {
+    console.log(student.name);
+}
+
+console.log("Eligibility Check:");
+for (let student of applicants) {
+    if (student.age >= 18) {
+        if (student.percentage >= 60) {
+            console.log(student.name, "is", "Eligible");
+        } else {
+            console.log(student.name, "is", "Not eligible");
+        }
+    } else {
+        console.log("Not Eligible");
+
+    }
+}
+
+for (let dept of applicants) {
+    console.log(dept.name);
+    switch (dept.department) {
+        case "CSE":
+            console.log("CSE Department");
+            break;
+        case "ECE":
+            console.log("ECE Department");
+            break;
+        case "EEE":
+            console.log("EEE Department");
+            break;
+        case "CIVIL":
+            console.log("CIVIL Department");
+            break;
+        case "MECH":
+            console.log("MECH Department");
+            break;
+        default:
+            console.log("Department not found");
+            break;
+    }
+}
+
+console.log("Admission Results:");
+let Results = (Admission) => {
+    Admission()
+}
+Results(
+    () => {
+        for (let student of applicants) {
+            if (student.age >= 18) {
+                if (student.percentage >= 60) {
+                    console.log(student.name, ": your admission is succes");
+
+                } else {
+                    console.log(student.name, ": your admission is not success bcoz of low percentage");
+                }
+            } else {
+                console.log(student.name, ": your admission is not success bcoz of age");
+            }
+        }
+    }
+)
+
+
+
