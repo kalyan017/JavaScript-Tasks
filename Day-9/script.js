@@ -6,8 +6,9 @@ fetch(api)
 
     .then((js) => {
         console.log(js);
+
         // Products Display
-        
+
         js.forEach((c, i, t) => {
             let div1 = document.querySelector(".div1");
             let card1 = document.createElement("div");
@@ -25,7 +26,7 @@ fetch(api)
 Men's Clothing
 Women's Clothing
 Electronics
-Jewelry`).toLowerCase()
+Jewelery`).toLowerCase()
             let result = js.filter(product =>
                 product.category.toLowerCase() === search
             );
@@ -48,6 +49,28 @@ Jewelry`).toLowerCase()
 
         });
 
+    // category Filter
+
+    let dropdown=document.querySelector("#category");
+    dropdown.addEventListener("change",()=>{
+        let category=dropdown.value;
+        let result;
+        if(category==="all"){
+             result=js
+        }else{
+            result=js.filter((product)=>product.category===category);
+        }
+
+        let div1=document.querySelector(".div1");
+        div1.innerHTML="";
+        result.forEach((c, i, t) => {
+                let card1 = document.createElement("div");
+                card1.innerHTML = `<img src=${c.image}><h1>${c.title}</h1><h2>Price: $${c.price}</h2>
+            <h2>${c.category}</h2><p>${c.description.slice(0, 200)}...</p>`;
+                div1.append(card1);
+            });
+    })
+
     })
     .catch((error) => {
         console.log("error");
@@ -57,3 +80,7 @@ Jewelry`).toLowerCase()
         console.log("api is running");
 
     })
+
+
+
+
