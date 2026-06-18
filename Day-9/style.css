@@ -10,6 +10,7 @@
     text-decoration: underline red;
     margin-top: 10px;
 }
+
 .div1{
     margin: 20px;
     padding: 30px;
@@ -17,7 +18,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:10px;
+    gap:20px;
 }
 
 .div1>div{
@@ -30,8 +31,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 15px 15px 20px 20px;
-    gap:10px;
-    padding: 10px;
+    gap:20px;
+    padding: 20px;
 }
 
 .div1>div>h1{
@@ -54,21 +55,153 @@
     text-align: center;
 }
 
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    margin-left:10%;
+}
 
+button:hover{
+    box-shadow: 0px 0px 5px 2px black;
+    font-size: 15px;
+    padding: 15px;
+}
 
 .div1>div:hover{
     background-color: lightblue;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 4px 4px 5px black;
     cursor: pointer;
     gap: 20px;
 }
 
 #heading2{
     text-align: end;
-    padding-right:200px;
+    padding-right:10%;
+    padding-top: 10px;
 }
 #heading2>button{
     text-decoration:underline red;
     color: black;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    font-size: 18px;
+}
+
+#category{
+    text-align: center;
+    margin-left: 9%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+#heading3{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline red;
+    margin-top: 10px;
+}
+
+.cart{
+    margin: 20px;
+    padding: 30px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.cart>div{
+    width: 300px;
+    height: auto;
+    background-color:rgb(219, 106, 106);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px 15px 20px 20px;
+    gap:20px;
+    padding: 20px;
+}
+
+
+.cart>div>h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.cart>div>img{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.cart>div>h2,p{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    margin-left:10%;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px 2px black;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.cart>div:hover{
+    background-color: lightblue;
+    box-shadow: 4px 4px 5px black;
+    cursor: pointer;
+    gap: 20px;
+}
+
+#heading2{
+    text-align: end;
+    padding-right:10%;
+    padding-top: 10px;
+}
+#heading2>button{
+    text-decoration:underline red;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    font-size: 18px;
+}
+
+#cartCount{
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: brown;
+    width: 7%;
+    border-radius: 30px;
+    color: white;
+    padding: 20px;
+
 }
