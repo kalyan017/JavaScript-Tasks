@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background: repeating-linear-gradient(to right,black,white,rgb(0, 0, 0));
+}
 #heading1{
     text-align: center;
     font-size: 40px;
@@ -24,7 +27,7 @@
 .div1>div{
     width: 300px;
     height: auto;
-    background-color:rgb(219, 106, 106);
+    background-color:rgb(219, 179, 106);
     color: white;
     display: flex;
     justify-content: center;
@@ -59,7 +62,7 @@ button{
     padding: 10px;
     border: none;
     border-radius: 40px;
-    background-color: brown;
+    background-color: rgb(255, 181, 181);
     cursor: pointer;
     color: white;
     margin-left:10%;
@@ -89,7 +92,7 @@ button:hover{
     cursor: pointer;
     padding: 5px;
     border-radius: 20px;
-    background-color: cadetblue;
+    background-color: rgb(184, 253, 255);
     font-size: 18px;
 }
 
