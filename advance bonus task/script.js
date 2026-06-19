@@ -119,7 +119,7 @@ function displayProducts(product) {
         <h3>${c.name}</h3>
         <p>ID : ${c.id}</p>
         <img src=${c.image}>
-        <h4>₹${c.price}</h4>
+        <h4>Price : ₹${c.price}</h4>
         <p>${c.category}</p>
         <button onclick="addToCart(${c.id})">Add To Cart</button>`;
         div2.append(div21);

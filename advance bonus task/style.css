@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    background:repeating-linear-gradient(to right,black, white,black);
+}
+
 #heading1{
     font-size: 40px;
     padding-top: 50px;
 }
 
+#heading1:hover{
+    font-size: 50px;
+    cursor: pointer;
+}
 #div2 {
     margin-top: 40px;
     display: flex;
@@ -22,7 +30,6 @@
     border: 2px solid;
     padding: 20px;
     width: 25%;
-    height: 350px;
     border-radius: 10px 10px 20px 20px;
     background-color: brown;
     display: flex;
@@ -42,8 +49,10 @@
 
 #div2>div>h1,
 p,
-h2 {
+h4,h3{
     padding: 10px;
+    color: white;
+    font-size: 20px;
 }
 
 button {
@@ -56,6 +65,12 @@ button {
     border-radius: 30px;
     cursor: pointer;
 }
+
+button:hover{
+    padding: 20px;
+    background-color: red;
+}
+
 
 #heading1 {
     text-align: center;
@@ -102,10 +117,10 @@ h2 {
     justify-content: space-between;
     align-items: center;
     border: 1px solid gray;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 10px;
-    border-radius: 8px;
-    background-color: whitesmoke;
+    border-radius: 15px;
+    background-color: rgb(8, 0, 0);
 }
 
 
