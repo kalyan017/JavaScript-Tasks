@@ -21,8 +21,8 @@
 #div2>div {
     border: 2px solid;
     padding: 20px;
-    width: 40%;
-    height: auto;
+    width: 25%;
+    height: 350px;
     border-radius: 10px 10px 20px 20px;
     background-color: brown;
     display: flex;
